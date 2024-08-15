@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangeetha the Maestro of Management - Vegetables and Fruits</title>
+    <style>
+        /* CSS Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f8fc;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            position: relative;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #4A90E2;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        .item-container {
+            margin-bottom: 20px;
+        }
+
+        .item-container h2 {
+            margin-bottom: 20px;
+            color: #50E3C2;
+            border-bottom: 2px solid #50E3C2;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .item label {
+            width: 150px;
+            font-weight: bold;
+        }
+
+        .item input[type="number"] {
+            width: 60px;
+            padding: 5px;
+            margin-right: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .item select {
+            padding: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .output-container {
+            background-color: #282c34;
+            color: #61dafb;
+            padding: 20px;
+            border-radius: 8px;
+            height: 250px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+            font-family: 'Courier New', Courier, monospace;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        #copyButton {
+            background-color: #50E3C2;
+            color: #fff;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            position: absolute;
+            bottom: 270px; /* Adjust this value as needed */
+            right: 20px;
+        }
+
+        #copyButton:hover {
+            background-color: #3ac9a9;
+        }
+
+        .interactive-item {
+            background-color: #f1f1f1;
+            border-radius: 8px;
+            padding: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .interactive-item:hover {
+            background-color: #e9f8f5;
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>SANGEETHA (PURCHASE) - FIREFLY </h1>
+
+        <!-- Vegetables Section -->
+        <div class="item-container">
+            <h2>VEGETABLES</h2>
+            <div class="item interactive-item">
+                <label>ONION</label>
+                <input type="number" min="1" max="100" id="onionQuantity" placeholder="QTY">
+                <select id="onionUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>TOMATO (B)</label>
+                <input type="number" min="1" max="100" id="tomatoBQuantity" placeholder="QTY">
+                <select id="tomatoBUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>TOMATO (L)</label>
+                <input type="number" min="1" max="100" id="tomatoLQuantity" placeholder="QTY">
+                <select id="tomatoLUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>BEANS</label>
+                <input type="number" min="1" max="100" id="beansQuantity" placeholder="QTY">
+                <select id="beansUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>BEETROOT</label>
+                <input type="number" min="1" max="100" id="beetrootQuantity" placeholder="QTY">
+                <select id="beetrootUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>CABBAGE</label>
+                <input type="number" min="1" max="100" id="cabbageQuantity" placeholder="QTY">
+                <select id="cabbageUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>CARROT</label>
+                <input type="number" min="1" max="100" id="carrotQuantity" placeholder="QTY">
+                <select id="carrotUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>CUCUMBER</label>
+                <input type="number" min="1" max="100" id="cucumberQuantity" placeholder="QTY">
+                <select id="cucumberUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>POTATO</label>
+                <input type="number" min="1" max="100" id="potatoQuantity" placeholder="QTY">
+                <select id="potatoUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>SPRING ONION</label>
+                <input type="number" min="1" max="100" id="springOnionQuantity" placeholder="QTY">
+                <select id="springOnionUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>CAPSICUM</label>
+                <input type="number" min="1" max="100" id="capsicumQuantity" placeholder="QTY">
+                <select id="capsicumUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>GREEN CHILLI</label>
+                <input type="number" min="1" max="100" id="greenChilliQuantity" placeholder="QTY">
+                <select id="greenChilliUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>SALAN CHILLI</label>
+                <input type="number" min="1" max="100" id="salanChilliQuantity" placeholder="QTY">
+                <select id="salanChilliUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>CURRY LEAF</label>
+                <input type="number" min="1" max="100" id="curryLeafQuantity" placeholder="QTY">
+                <select id="curryLeafUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>DONDA</label>
+                <input type="number" min="1" max="100" id="dondaQuantity" placeholder="QTY">
+                <select id="dondaUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>LADY FINGER</label>
+                <input type="number" min="1" max="100" id="ladyFingerQuantity" placeholder="QTY">
+                <select id="ladyFingerUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>ARVI</label>
+                <input type="number" min="1" max="100" id="arviQuantity" placeholder="QTY">
+                <select id="arviUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>BRINJAL (B)</label>
+                <input type="number" min="1" max="100" id="brinjalBQuantity" placeholder="QTY">
+                <select id="brinjalBUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>BRINJAL (S)</label>
+                <input type="number" min="1" max="100" id="brinjalSQuantity" placeholder="QTY">
+                <select id="brinjalSUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>BRINJAL (L)</label>
+                <input type="number" min="1" max="100" id="brinjalLQuantity" placeholder="QTY">
+                <select id="brinjalLUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>BRINJAL (W)</label>
+                <input type="number" min="1" max="100" id="brinjalWQuantity" placeholder="QTY">
+                <select id="brinjalWUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>KARELA</label>
+                <input type="number" min="1" max="100" id="karelaQuantity" placeholder="QTY">
+                <select id="karelaUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>GOVAR</label>
+                <input type="number" min="1" max="100" id="govarQuantity" placeholder="QTY">
+                <select id="govarUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>SEMKI PALLI</label>
+                <input type="number" min="1" max="100" id="semkiPalliQuantity" placeholder="QTY">
+                <select id="semkiPalliUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>TURAI</label>
+                <input type="number" min="1" max="100" id="turaiQuantity" placeholder="QTY">
+                <select id="turaiUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>YAM KANDA</label>
+                <input type="number" min="1" max="100" id="yamKandaQuantity" placeholder="QTY">
+                <select id="yamKandaUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>PARVAL</label>
+                <input type="number" min="1" max="100" id="parvalQuantity" placeholder="QTY">
+                <select id="parvalUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>GREEN PEAS</label>
+                <input type="number" min="1" max="100" id="greenPeasQuantity" placeholder="QTY">
+                <select id="greenPeasUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>SNAKEGUARD</label>
+                <input type="number" min="1" max="100" id="snakeGuardQuantity" placeholder="QTY">
+                <select id="snakeGuardUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>LOUKI (SORAKAYA)</label>
+                <input type="number" min="1" max="100" id="loukiQuantity" placeholder="QTY">
+                <select id="loukiUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>CAULIFLOWER</label>
+                <input type="number" min="1" max="100" id="cauliflowerQuantity" placeholder="QTY">
+                <select id="cauliflowerUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>RADISH</label>
+                <input type="number" min="1" max="100" id="radishQuantity" placeholder="QTY">
+                <select id="radishUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>DRUMSTICKS</label>
+                <input type="number" min="1" max="100" id="drumsticksQuantity" placeholder="QTY">
+                <select id="drumsticksUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>POPAYA</label>
+                <input type="number" min="1" max="100" id="popayaQuantity" placeholder="QTY">
+                <select id="popayaUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>LEMON</label>
+                <input type="number" min="1" max="100" id="lemonQuantity" placeholder="QTY">
+                <select id="lemonUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>GINGER</label>
+                <input type="number" min="1" max="100" id="gingerQuantity" placeholder="QTY">
+                <select id="gingerUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>GARLIC</label>
+                <input type="number" min="1" max="100" id="garlicQuantity" placeholder="QTY">
+                <select id="garlicUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>CORIANDER</label>
+                <input type="number" min="1" max="100" id="corianderQuantity" placeholder="QTY">
+                <select id="corianderUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>PUDINA</label>
+                <input type="number" min="1" max="100" id="pudinaQuantity" placeholder="QTY">
+                <select id="pudinaUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>PALAK</label>
+                <input type="number" min="1" max="100" id="palakQuantity" placeholder="QTY">
+                <select id="palakUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>METHI (B)</label>
+                <input type="number" min="1" max="100" id="methiBQuantity" placeholder="QTY">
+                <select id="methiBUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>METHI (S)</label>
+                <input type="number" min="1" max="100" id="methiSQuantity" placeholder="QTY">
+                <select id="methiSUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>BANANA LEAFS</label>
+                <input type="number" min="1" max="100" id="bananaLeafsQuantity" placeholder="QTY">
+                <select id="bananaLeafsUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>COCONUTS</label>
+                <input type="number" min="1" max="100" id="coconutsQuantity" placeholder="QTY">
+                <select id="coconutsUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>YELLOW CAPSICUM</label>
+                <input type="number" min="1" max="100" id="yellowCapsicumQuantity" placeholder="QTY">
+                <select id="yellowCapsicumUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>RED CAPSICUM</label>
+                <input type="number" min="1" max="100" id="redCapsicumQuantity" placeholder="QTY">
+                <select id="redCapsicumUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>BROCCOLI</label>
+                <input type="number" min="1" max="100" id="broccoliQuantity" placeholder="QTY">
+                <select id="broccoliUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>ICE BERG</label>
+                <input type="number" min="1" max="100" id="iceBergQuantity" placeholder="QTY">
+                <select id="iceBergUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>CH CABBAGE</label>
+                <input type="number" min="1" max="100" id="chCabbageQuantity" placeholder="QTY">
+                <select id="chCabbageUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>RED CABBAGE</label>
+                <input type="number" min="1" max="100" id="redCabbageQuantity" placeholder="QTY">
+                <select id="redCabbageUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>CHERRY TOMATO</label>
+                <input type="number" min="1" max="100" id="cherryTomatoQuantity" placeholder="QTY">
+                <select id="cherryTomatoUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>YELLOW ZUCCHINI</label>
+                <input type="number" min="1" max="100" id="yellowZucchiniQuantity" placeholder="QTY">
+                <select id="yellowZucchiniUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>GREEN ZUCCHINI</label>
+                <input type="number" min="1" max="100" id="greenZucchiniQuantity" placeholder="QTY">
+                <select id="greenZucchiniUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>CELERY</label>
+                <input type="number" min="1" max="100" id="celeryQuantity" placeholder="QTY">
+                <select id="celeryUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>PARSLEY</label>
+                <input type="number" min="1" max="100" id="parsleyQuantity" placeholder="QTY">
+                <select id="parsleyUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>GREEN SALAD</label>
+                <input type="number" min="1" max="100" id="greenSaladQuantity" placeholder="QTY">
+                <select id="greenSaladUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>CHINESE POKCHY</label>
+                <input type="number" min="1" max="100" id="chinesPokchyQuantity" placeholder="QTY">
+                <select id="chinesePokchyUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>LEEKS</label>
+                <input type="number" min="1" max="100" id="leeksQuantity" placeholder="QTY">
+                <select id="leeksUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>BASIL LEAF</label>
+                <input type="number" min="1" max="100" id="basilLeafQuantity" placeholder="QTY">
+                <select id="basilLeafUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>LEMON GRASS</label>
+                <input type="number" min="1" max="100" id="lemonGrassQuantity" placeholder="QTY">
+                <select id="lemonGrassUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>RED RADISH</label>
+                <input type="number" min="1" max="100" id="redRadishQuantity" placeholder="QTY">
+                <select id="redRadishUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>TURNIP</label>
+                <input type="number" min="1" max="100" id="turnipQuantity" placeholder="QTY">
+                <select id="turnipUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>ASPARAGUS</label>
+                <input type="number" min="1" max="100" id="asparagusQuantity" placeholder="QTY">
+                <select id="asparagusUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>BABY CORN</label>
+                <input type="number" min="1" max="100" id="babyCornQuantity" placeholder="QTY">
+                <select id="babyCornUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>RED LETTUCE</label>
+                <input type="number" min="1" max="100" id="redLettuceQuantity" placeholder="QTY">
+                <select id="redLettuceUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>ROMAN LETTUCE</label>
+                <input type="number" min="1" max="100" id="romanLettuceQuantity" placeholder="QTY">
+                <select id="romanLettuceUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>ROSE MARRY</label>
+                <input type="number" min="1" max="100" id="rosemarryQuantity" placeholder="QTY">
+                <select id="rosemarryUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>THYME</label>
+                <input type="number" min="1" max="100" id="thymeQuantity" placeholder="QTY">
+                <select id="thymeUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>BRUSSELS SPROUTS</label>
+                <input type="number" min="1" max="100" id="brusselsSproutsQuantity" placeholder="QTY">
+                <select id="brusselsSproutsUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>GALANGAL</label>
+                <input type="number" min="1" max="100" id="galangalQuantity" placeholder="QTY">
+                <select id="galangalUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>RED CHILLI </label>
+                <input type="number" min="1" max="100" id="redChilliQuantity" placeholder="QTY">
+                <select id="redChilliUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+
+            <div class="item interactive-item">
+                <label>ROCKET</label>
+                <input type="number" min="1" max="100" id="rocketQuantity" placeholder="QTY">
+                <select id="rocketUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            
+            <div class="item interactive-item">
+                <label>MUSHROOM </label>
+                <input type="number" min="1" max="100" id="mushroomQuantity" placeholder="QTY">
+                <select id="mushroomUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+
+            <div class="item interactive-item">
+                <label>EUROPEAN CUCUMBER</label>
+                <input type="number" min="1" max="100" id="europeanCucumberQuantity" placeholder="QTY">
+                <select id="europeanCucumberUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+
+        </div>
+
+        <!-- Fruits Section -->
+        <div class="item-container">
+            <h2>FRUITS</h2>
+            <div class="item interactive-item">
+                <label>APPLE</label>
+                <input type="number" min="1" max="100" id="appleQuantity" placeholder="QTY">
+                <select id="appleUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+
+            <div class="item interactive-item">
+                <label>BANANA</label>
+                <input type="number" min="1" max="100" id="bananaQuantity" placeholder="QTY">
+                <select id="bananaUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+
+            <div class="item interactive-item">
+                <label>PINEAPPLE</label>
+                <input type="number" min="1" max="100" id="pineappleQuantity" placeholder="QTY">
+                <select id="pineappleUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+
+            <div class="item interactive-item">
+                <label>GREEN APPLE </label>
+                <input type="number" min="1" max="100" id="greenAppleQuantity" placeholder="QTY">
+                <select id="greenAppleUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+
+            <div class="item interactive-item">
+                <label>BLACK GRAPES </label>
+                <input type="number" min="1" max="100" id="blackGrapesQuantity" placeholder="QTY">
+                <select id="blackGrapesUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+
+            <div class="item interactive-item">
+                <label>ANAR </label>
+                <input type="number" min="1" max="100" id="anarQuantity" placeholder="QTY">
+                <select id="anarUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+
+            <div class="item interactive-item">
+                <label>PAPAYA</label>
+                <input type="number" min="1" max="100" id="papayaQuantity" placeholder="QTY">
+                <select id="papayaUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+
+            <div class="item interactive-item">
+                <label>SWEET LIME </label>
+                <input type="number" min="1" max="100" id="sweetLimeQuantity" placeholder="QTY">
+                <select id="sweetLimeUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+
+            <div class="item interactive-item">
+                <label>WATER LEMON</label>
+                <input type="number" min="1" max="100" id="watermelonQuantity" placeholder="QTY">
+                <select id="watermelonUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+
+            <div class="item interactive-item">
+                <label>AVOCADO </label>
+                <input type="number" min="1" max="100" id="avocadoQuantity" placeholder="QTY">
+                <select id="avocadoUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+
+            <div class="item interactive-item">
+                <label>MANGO</label>
+                <input type="number" min="1" max="100" id="mangoQuantity" placeholder="QTY">
+                <select id="mangoUnit">
+                    <option value="KG">KG</option>
+                    <option value="GMS">GMS</option>
+                    <option value="PCS">PCS</option>
+                </select>
+            </div>
+            <!-- Add more fruits as needed -->
+        </div>
+
+        <!-- Output Container -->
+        <div class="output-container" id="output">
+            <!-- The output will be displayed here -->
+        </div>
+
+        <!-- Copy Button (Positioned above the output container) -->
+        <button id="copyButton">Copy</button>
+    </div>
+    
+        <script>
+            // JavaScript Code
+    
+            const outputText = document.getElementById('output');
+            const copyButton = document.getElementById('copyButton');
+    
+            const items = [
+                // Vegetables
+                { name: "ONION", quantityId: "onionQuantity", unitId: "onionUnit" },
+                { name: "TOMATO (B)", quantityId: "tomatoBQuantity", unitId: "tomatoBUnit" },
+                { name: "TOMATO (L)", quantityId: "tomatoLQuantity", unitId: "tomatoLUnit" },
+                { name: "BEANS", quantityId: "beansQuantity", unitId: "beansUnit" },
+                { name: "BEETROOT", quantityId: "beetrootQuantity", unitId: "beetrootUnit" },
+                { name: "CABBAGE", quantityId: "cabbageQuantity", unitId: "cabbageUnit" },
+                { name: "CARROT", quantityId: "carrotQuantity", unitId: "carrotUnit" },
+                { name: "CUCUMBER", quantityId: "cucumberQuantity", unitId: "cucumberUnit" },
+                { name: "POTATO", quantityId: "potatoQuantity", unitId: "potatoUnit" },
+                { name: "SPRING ONION", quantityId: "springOnionQuantity", unitId: "springOnionUnit" },
+                { name: "CAPSICUM", quantityId: "capsicumQuantity", unitId: "capsicumUnit" },
+                { name: "GREEN CHILLI", quantityId: "greenChilliQuantity", unitId: "greenChilliUnit" },
+                { name: "SALAN CHILLI", quantityId: "salanChilliQuantity", unitId: "salanChilliUnit" },
+                { name: "CURRY LEAF", quantityId: "curryLeafQuantity", unitId: "curryLeafUnit" },
+                { name: "DONDA", quantityId: "dondaQuantity", unitId: "dondaUnit" },
+                { name: "LADY FINGER", quantityId: "ladyFingerQuantity", unitId: "ladyFingerUnit" },
+                { name: "ARVI", quantityId: "arviQuantity", unitId: "arviUnit" },
+                { name: "BRINJAL (B)", quantityId: "brinjalBQuantity", unitId: "brinjalBUnit" },
+                { name: "BRINJAL (S)", quantityId: "brinjalSQuantity", unitId: "brinjalSUnit" },
+                { name: "BRINJAL (L)", quantityId: "brinjalLQuantity", unitId: "brinjalLUnit" },
+                { name: "BRINJAL (W)", quantityId: "brinjalWQuantity", unitId: "brinjalWUnit" },
+                { name: "KARELA", quantityId: "karelaQuantity", unitId: "karelaUnit" },
+                { name: "GOVAR", quantityId: "govarQuantity", unitId: "govarUnit" },
+                { name: "SEMKI PALLI", quantityId: "semkiPalliQuantity", unitId: "semkiPalliUnit" },
+                { name: "TURAI", quantityId: "turaiQuantity", unitId: "turaiUnit" },
+                { name: "YAM KANDA", quantityId: "yamKandaQuantity", unitId: "yamKandaUnit" },
+                { name: "PARVAL", quantityId: "parvalQuantity", unitId: "parvalUnit" },
+                { name: "GREEN PEAS", quantityId: "greenPeasQuantity", unitId: "greenPeasUnit" },
+                { name: "SNAKEGUARD", quantityId: "snakeGuardQuantity", unitId: "snakeGuardUnit" },
+                { name: "LOUKI (SORAKAYA)", quantityId: "loukiQuantity", unitId: "loukiUnit" },
+                { name: "CAULIFLOWER", quantityId: "cauliflowerQuantity", unitId: "cauliflowerUnit" },
+                { name: "RADISH", quantityId: "radishQuantity", unitId: "radishUnit" },
+                { name: "DRUMSTICKS", quantityId: "drumsticksQuantity", unitId: "drumsticksUnit" },
+                { name: "POPAYA", quantityId: "popayaQuantity", unitId: "popayaUnit" },
+                { name: "LEMON", quantityId: "lemonQuantity", unitId: "lemonUnit" },
+                { name: "GINGER", quantityId: "gingerQuantity", unitId: "gingerUnit" },
+                { name: "GARLIC", quantityId: "garlicQuantity", unitId: "garlicUnit" },
+                { name: "CORIANDER", quantityId: "corianderQuantity", unitId: "corianderUnit" },
+                { name: "PUDINA", quantityId: "pudinaQuantity", unitId: "pudinaUnit" },
+                { name: "PALAK", quantityId: "palakQuantity", unitId: "palakUnit" },
+                { name: "METHI (B)", quantityId: "methiBQuantity", unitId: "methiBUnit" },
+                { name: "METHI (S)", quantityId: "methiSQuantity", unitId: "methiSUnit" },
+                { name: "BANANA LEAFS", quantityId: "bananaLeafsQuantity", unitId: "bananaLeafsUnit" },
+                { name: "COCONUTS", quantityId: "coconutsQuantity", unitId: "coconutsUnit" },
+                { name: "YELLOW CAPSICUM", quantityId: "yellowCapsicumQuantity", unitId: "yellowCapsicumUnit" },
+                { name: "RED CAPSICUM", quantityId: "redCapsicumQuantity", unitId: "redCapsicumUnit" },
+                { name: "BROCCOLI", quantityId: "broccoliQuantity", unitId: "broccoliUnit" },
+                { name: "ICE BERG", quantityId: "iceBergQuantity", unitId: "iceBergUnit" },
+                { name: "CH CABBAGE", quantityId: "chCabbageQuantity", unitId: "chCabbageUnit" },
+                { name: "RED CABBAGE", quantityId: "redCabbageQuantity", unitId: "redCabbageUnit" },
+                { name: "CHERRY TOMATO", quantityId: "cherryTomatoQuantity", unitId: "cherryTomatoUnit" },
+                { name: "YELLOW ZUCCHINI", quantityId: "yellowZucchiniQuantity", unitId: "yellowZucchiniUnit" },
+                { name: "GREEN ZUCCHINI", quantityId: "greenZucchiniQuantity", unitId: "greenZucchiniUnit" },
+                { name: "CELERY", quantityId: "celeryQuantity", unitId: "celeryUnit" },
+                { name: "PARSLEY", quantityId: "parsleyQuantity", unitId: "parsleyUnit" },
+                { name: "GREEN SALAD", quantityId: "greenSaladQuantity", unitId: "greenSaladUnit" },
+                { name: "CHINESE POKCHY", quantityId: "chinesPokchyQuantity", unitId: "chinesePokchyUnit" },
+                { name: "LEEKS", quantityId: "leeksQuantity", unitId: "leeksUnit" },
+                { name: "BASIL LEAF", quantityId: "basilLeafQuantity", unitId: "basilLeafUnit" },
+                { name: "LEMON GRASS", quantityId: "lemonGrassQuantity", unitId: "lemonGrassUnit" },
+                { name: "RED RADISH", quantityId: "redRadishQuantity", unitId: "redRadishUnit" },
+                { name: "TURNIP", quantityId: "turnipQuantity", unitId: "turnipUnit" },
+                { name: "ASPARAGUS", quantityId: "asparagusQuantity", unitId: "asparagusUnit" },
+                { name: "BABY CORN", quantityId: "babyCornQuantity", unitId: "babyCornUnit" },
+                { name: "RED LETTUCE", quantityId: "redLettuceQuantity", unitId: "redLettuceUnit" },
+                { name: "ROMAN LETTUCE", quantityId: "romanLettuceQuantity", unitId: "romanLettuceUnit" },
+                { name: "ROSE MARRY", quantityId: "rosemarryQuantity", unitId: "rosemarryUnit" },
+                { name: "THYME", quantityId: "thymeQuantity", unitId: "thymeUnit" },
+                { name: "BRUSSELS SPROUTS", quantityId: "brusselsSproutsQuantity", unitId: "brusselsSproutsUnit" },
+                { name: "GALANGAL", quantityId: "galangalQuantity", unitId: "galangalUnit" },
+                { name: "RED CHILLI", quantityId: "redChilliQuantity", unitId: "redChilliUnit" },
+                { name: "ROCKET", quantityId: "rocketQuantity", unitId: "rocketUnit" },
+                { name: "MUSHROOM", quantityId: "mushroomQuantity", unitId: "mushroomUnit" },
+                { name: "EUROPEAN CUCUMBER", quantityId: "europeanCucumberQuantity", unitId: "europeanCucumberUnit" },
+    
+                // Fruits
+                { name: "APPLE", quantityId: "appleQuantity", unitId: "appleUnit" },
+                { name: "BANANA", quantityId: "bananaQuantity", unitId: "bananaUnit" },
+                { name: "PINEAPPLE", quantityId: "pineappleQuantity", unitId: "pineappleUnit" },
+                { name: "GREEN APPLE", quantityId: "greenAppleQuantity", unitId: "greenAppleUnit" },
+                { name: "BLACK GRAPES", quantityId: "blackGrapesQuantity", unitId: "blackGrapesUnit" },
+                { name: "ANAR", quantityId: "anarQuantity", unitId: "anarUnit" },
+                { name: "PAPAYA", quantityId: "papayaQuantity", unitId: "papayaUnit" },
+                { name: "SWEET LIME", quantityId: "sweetLimeQuantity", unitId: "sweetLimeUnit" },
+                { name: "WATERMELON", quantityId: "watermelonQuantity", unitId: "watermelonUnit" },
+                { name: "AVOCADO", quantityId: "avocadoQuantity", unitId: "avocadoUnit" },
+                { name: "MANGO", quantityId: "mangoQuantity", unitId: "mangoUnit" }
+            ];
+    
+            let vegetables = [
+                "ONION", "TOMATO (B)", "TOMATO (L)", "BEANS", "BEETROOT", "CABBAGE", "CARROT",
+                "CUCUMBER", "POTATO", "SPRING ONION", "CAPSICUM", "GREEN CHILLI", "SALAD CHILLI",
+                "CURRY LEAF", "DONDA", "LADY FINGER", "ARVI", "BRINJAL (B)", "BRINJAL (S)",
+                "BRINJAL (L)", "BRINJAL (W)", "KARELA", "GOVAR", "SEMKI PALLI", "TURAI",
+                "YAM KANDA", "PARVAL", "GREEN PEAS", "SNAKEGUARD", "LOUKI (SORAKAYA)",
+                "CAULIFLOWER", "RADISH", "DRUMSTICKS", "POPAYA", "LEMON", "GINGER", "GARLIC",
+                "CORIANDER", "PUDINA", "PALAK", "METHI (B)", "METHI (S)", "BANANA LEAFS",
+                "COCONUTS", "YELLOW CAPSICUM", "RED CAPSICUM", "BROCCOLI", "ICE BERG",
+                "CH CABBAGE", "RED CABBAGE", "CHERRY TOMATO", "YELLOW ZUCCHINI",
+                "GREEN ZUCCHINI", "CELERY", "PARSLEY", "GREEN SALAD", "CHINESE POKCHY",
+                "LEEKS", "BASIL LEAF", "LEMON GRASS", "RED RADISH", "TURNIP", "ASPARAGUS",
+                "BABY CORN", "RED LETTUCE", "ROMAN LETTUCE", "ROSE MARRY", "THYME",
+                "BRUSSELS SPROUTS", "GALANGAL", "RED CHILLI", "ROCKET", "MUSHROOM",
+                "EUROPEAN CUCUMBER"
+            ];
+    
+            let fruits = [
+                "APPLE", "BANANA", "PINEAPPLE", "GREEN APPLE", "ANAR", "BLACK GRAPES",
+                "PAPAYA", "SWEET LIME", "WATERMELON", "AVOCADO", "MANGO"
+            ];
+    
+            function updateOutput() {
+                let vegetablesAdded = false;
+                let fruitsAdded = false;
+                let outputContent = '';
+    
+                items.forEach(item => {
+                    const quantityElement = document.getElementById(item.quantityId);
+                    const unitElement = document.getElementById(item.unitId);
+    
+                    if (quantityElement && unitElement) {
+                        const quantity = parseInt(quantityElement.value);
+                        const unit = unitElement.value;
+    
+                        if (quantity && unit) {
+                            if (vegetables.includes(item.name)) {
+                                if (!vegetablesAdded) {
+                                    outputContent += 'VEGETABLES\n';
+                                    vegetablesAdded = true;
+                                }
+                                outputContent += `${quantity} ${unit} ${item.name}\n`;
+                            } else if (fruits.includes(item.name)) {
+                                if (!fruitsAdded) {
+                                    outputContent += 'FRUITS\n';
+                                    fruitsAdded = true;
+                                }
+                                outputContent += `${quantity} ${unit} ${item.name}\n`;
+                            }
+                        }
+                    }
+                });
+    
+                // Clear and update the output container
+                outputText.innerText = outputContent.trim();
+            }
+    
+            // Add event listeners to trigger updateOutput() function on changes
+            const quantityElements = document.querySelectorAll('input[type="number"]');
+            const unitElements = document.querySelectorAll('select');
+    
+            quantityElements.forEach(element => {
+                element.addEventListener('input', updateOutput);
+            });
+    
+            unitElements.forEach(element => {
+                element.addEventListener('change', updateOutput);
+            });
+    
+            // Event listener for the copy button
+            copyButton.addEventListener('click', () => {
+                const text = outputText.innerText;
+                navigator.clipboard.writeText(text).then(() => {
+                    alert('Text copied to clipboard!');
+                }).catch(err => {
+                    console.error('Failed to copy text: ', err);
+                });
+            });
+        </script>
+    </body>
+    </html>
+    
